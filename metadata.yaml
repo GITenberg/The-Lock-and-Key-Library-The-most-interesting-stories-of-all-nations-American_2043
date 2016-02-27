@@ -1,0 +1,106 @@
+_repo: The-Lock-and-Key-Library-The-most-interesting-stories-of-all-nations-American_2043
+contributor:
+  contributors:
+  - agent_name: Post, Melville Davisson
+    birthdate: 1871
+    deathdate: &id001 1930
+    gutenberg_agent_id: '1055'
+    url: http://www.gutenberg.org/2009/agents/1055
+    wikipedia: http://en.wikipedia.org/wiki/Melville_Davisson_Post
+  - agent_name: Hawthorne, Nathaniel
+    birthdate: 1804
+    deathdate: 1864
+    gutenberg_agent_id: '28'
+    url: http://www.gutenberg.org/2009/agents/28
+    wikipedia: http://en.wikipedia.org/wiki/Nathaniel_Hawthorne
+  - agent_name: Irving, Washington
+    alias: Crayon, Geoffrey
+    birthdate: 1783
+    deathdate: 1859
+    gutenberg_agent_id: '34'
+    url: http://www.gutenberg.org/2009/agents/34
+    wikipedia: http://en.wikipedia.org/wiki/Washington_Irving
+  - agent_name: O'Brien, Fitz James
+    aliases:
+    - O'Brien, Michael Fitz James
+    - O'Brien, Fitzjames
+    birthdate: 1828
+    deathdate: 1862
+    gutenberg_agent_id: '5848'
+    url: http://www.gutenberg.org/2009/agents/5848
+    wikipedia: http://en.wikipedia.org/wiki/Fitz_James_O'Brien
+  - agent_name: Crawford, F. Marion (Francis Marion)
+    alias: Crawford, Francis Marion
+    birthdate: 1854
+    deathdate: 1909
+    gutenberg_agent_id: '1316'
+    url: http://www.gutenberg.org/2009/agents/1316
+    wikipedia: http://en.wikipedia.org/wiki/Francis_Marion_Crawford
+  - agent_name: Freeman, Mary Eleanor Wilkins
+    aliases:
+    - Wilkins, Mary Eleanor
+    - Freeman, Mary E. Wilkins (Mary Eleanor Wilkins)
+    - Wilkins, Mary E. (Mary Eleanor)
+    - Wilkins, Mary Ella
+    birthdate: 1852
+    deathdate: *id001
+    gutenberg_agent_id: '495'
+    url: http://www.gutenberg.org/2009/agents/495
+    wikipedia: http://en.wikipedia.org/wiki/Mary_Eleanor_Wilkins_Freeman
+  - agent_name: Poe, Edgar Allan
+    alias: Poe, Edgar Allen
+    birthdate: 1809
+    deathdate: 1849
+    gutenberg_agent_id: '481'
+    url: http://www.gutenberg.org/2009/agents/481
+    wikipedia: http://en.wikipedia.org/wiki/Edgar_Allan_Poe
+  - agent_name: Brown, Charles Brockden
+    aliases:
+    - Poplicola
+    - Brown, C. B. (Charles Brockden)
+    - Brown, Brockden
+    birthdate: 1771
+    deathdate: 1810
+    gutenberg_agent_id: '416'
+    url: http://www.gutenberg.org/2009/agents/416
+    wikipedia: http://en.wikipedia.org/wiki/Charles_Brockden_Brown
+  - agent_name: Bierce, Ambrose
+    alias: Grile, Dod
+    birthdate: 1842
+    deathdate: 1913
+    gutenberg_agent_id: '206'
+    url: http://www.gutenberg.org/2009/agents/206
+    wikipedia: http://en.wikipedia.org/wiki/Ambrose_Bierce
+  creator:
+    editor:
+      agent_name: Hawthorne, Julian
+      birthdate: 1846
+      deathdate: 1934
+      gutenberg_agent_id: '675'
+      url: http://www.gutenberg.org/2009/agents/675
+      wikipedia: http://en.wikipedia.org/wiki/Julian_Hawthorne
+description: ''
+gutenberg_bookshelf: Short Stories
+gutenberg_issued: '2000-01-01'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '2043'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcc 'PS'
+- !lcsh 'Short stories, American'
+- !lcsh 'Detective and mystery stories'
+tableOfContents: "By the Waters of Paradise, by F. Marion Crawford\r\nThe Shadows\
+  \ on the Wall, by Mary E. Wilkins Freeman\r\nThe Corpus Delicti, by Melville D.\
+  \ Post\r\nAn Heiress from Redhorse, by Ambrose Bierce\r\nThe Man and the Snake,\
+  \ by Ambrose Bierce\r\nThe Oblong Box, by Edgar Allan Poe\r\nThe Gold-Bug, by Edgar\
+  \ Allan Poe\r\nWolfert Webber, or Golden Dreams, by Washington Irving\r\nAdventure\
+  \ of the Black Fisherman, by Washington Irving\r\nWieland's Madness, by Charles\
+  \ Brockden Brown\r\nThe Golden Ingot, by Fitzjames O'Brien\r\nMy Wife's Tempter,\
+  \ by Fitzjames O'Brien\r\nThe Minister's Black Veil, by Nathaniel Hawthorne\r\n\
+  Horror: A True Tale, by Anonymous"
+title: 'The Lock and Key Library: The most interesting stories of all nations: American'
+url: http://www.gutenberg.org/ebooks/2043
