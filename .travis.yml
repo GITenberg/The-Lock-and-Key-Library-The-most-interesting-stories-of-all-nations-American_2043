@@ -1,0 +1,61 @@
+sudo: required
+dist: trusty
+language: ruby
+
+before_install:
+before_install:
+- gem install asciidoctor -v 1.5.2
+- gem install tilt
+- sudo pip install git+https://github.com/gitenberg-dev/gitberg
+- sudo pip install pillow
+- sudo pip install cssutils
+- sudo pip install docutils
+- sudo pip install roman
+- sudo pip install git+https://github.com/gitenberg-dev/pg-epubmaker
+script:
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- sudo pip install -r asciidoctor-htmlbook/gitberg-machine/requirements.txt
+
+- /usr/bin/python -c "from gitenberg import travis; travis.build_epub()"
+- ebook-convert book.epub book.mobi
+- xvfb-run ebook-convert book.epub book.pdf
+branches:
+  only:
+  - master
+notifications:
+  webhooks:
+    urls:
+      - https://unglue.it/api/travisci/webhook
+    on_success: always
+    on_failure: never
+    on_start: never
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: WZm/H9Kim/FKR055Du1tf8tJQqUbkIRdDaaR2wtWFjkzSP4ePqsIA7/puRoObWh55jeqj13M/gZl3Dvtqyld2MeTgeJTfxtmqQe7czfO0DaoCkNFLBpSH6WvE/aVMlah7FgJd0TgDjyA8H2PUbKSo25aMWDbLeZd6ZKqh0TkdqK5QUlfSDtg/RL1YUoBg5hz4No+P3irYbrm7Yl9K8sZoMK+N7RnWULjvO/F0ao/Gc/LJpVpg8SbH0iq3asrlr0mE07Le+Csxkm6y3mu9ulnSOF/nCYvF12hMT9ozpr7jTTrk0T98wjh/I29ZInV3hYwbhVZiugA3ZzxCtPhmFgTJHGWE/c+lPVgMAYXzkfqLeghaPJ9eqo9xFLr51yse1tZnr6Hv2eHRcMegyHyEu8L/aRXXcCknLv82RJgvS29oao6nBFhbeQIHdYsxC2RN4WqSHR43SD0S1GDAhAmUp07pIOnWa94cvYiCklCsWqZA55kWTujfzX6TLAUzke9/pYgIxbNsMu/lC+p0Exiaa6sx1ByMv7rV/oejVrmTamOyoy78xODn5PBAWXCz6SuPBVfChXK/FijFmHhOrNR6co/6lELdzJDjr6Gvt1DnW2yhFcpVeC3mGKlkIRq5+fkO3TYWgMovMhvA0EvdUYSCvJM7uX5TXe/uE6Ic3FGTxUVGaQ=
+  file:
+    - book.epub
+    - book.mobi
+    - book.pdf
+  "on":
+    repo: GITenberg/The-Lock-and-Key-Library-The-most-interesting-stories-of-all-nations-American_2043
+addons:
+  apt:
+    packages:
+    - xsltproc
+    - xvfb
+    - calibre
+    - python-pip
+    - git
+    - python-dev
+    - libjpeg-dev
+    - libpng-dev
+    - libfreetype6
+    - libfreetype6-dev
+    - zlib1g-dev
+    - python-lxml
+    - libxml2-dev
+    - libxslt1-dev
+    - tidy
