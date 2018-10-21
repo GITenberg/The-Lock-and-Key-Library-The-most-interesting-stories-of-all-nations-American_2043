@@ -1,5 +1,5 @@
 _repo: The-Lock-and-Key-Library-The-most-interesting-stories-of-all-nations-American_2043
-_version: 0.2.0
+_version: 0.2.1
 contributor:
   contributors:
   - agent_name: Post, Melville Davisson
@@ -99,6 +99,7 @@ subjects:
 - !lcc 'PS'
 - !lcsh 'Short stories, American'
 - !lcsh 'Detective and mystery stories'
+- GITenberg
 tableOfContents: "By the Waters of Paradise, by F. Marion Crawford\r\nThe Shadows\
   \ on the Wall, by Mary E. Wilkins Freeman\r\nThe Corpus Delicti, by Melville D.\
   \ Post\r\nAn Heiress from Redhorse, by Ambrose Bierce\r\nThe Man and the Snake,\
